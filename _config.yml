@@ -1,8 +1,9 @@
 menu:
     About: /
+    Lab: /lab/
+    Resume: /resume/
     Blog: /blog/
     Archive: /archives/
-    GitHub: https://github.com/liquidpie
     Rss: /atom.xml
 
 favicon: /favicon.png
