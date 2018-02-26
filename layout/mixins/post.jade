@@ -4,21 +4,6 @@ mixin postInfo(item)
         if item.from && (is_home() || is_post())
             a.post-from(href=item.from target="_blank" title=item.from) 翻译 · 原文地址
 
-////- Index Page
-//mixin posts()
-//    ul.home.post-list
-//        - page.posts.each(function (item) {
-//            li.post-list-item
-//                article.post-block
-//                    h2.post-title
-//                        a.post-title-link(href= url_for(item.path))
-//                            != item.title
-//                    +postInfo(item)
-//                    .post-content
-//                        != item.excerpt
-//                    a.read-more(href= url_for(item.path))!= __('more')
-//        - })
-
 //- Blog Page
 mixin posts()
     ul.home.post-list
