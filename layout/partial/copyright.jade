@@ -1,7 +1,14 @@
-.copyright
-    - var hexoURL = "https://hexo.io/";
-    - var apolloURL = "https://github.com/pinggod/hexo-theme-apollo";
-    - var currentDate = new Date();
-    - var year = currentDate.getFullYear();
-    - year = year == theme.startyear ? year : theme.startyear + ' - ' + year;
-    p © #{year} #[a(href=config.url)!= config.author]
+.grid
+    .grid-row
+        .grid-col-1
+            .grid-block
+                ul#social
+                    li: a(target="_blank" href="https://www.facebook.com/vivek223") #[img.social-icon(src=url_for(theme.icon_facebook) alt="facebook")]
+                    li: a(target="_blank" href="https://www.linkedin.com/in/vivek223") #[img.social-icon(src=url_for(theme.icon_linkedin) alt="linkedin")]
+                    li: a(target="_blank" href="https://twitter.com/vivekjaiswal22") #[img.social-icon(src=url_for(theme.icon_twitter) alt="twitter")]
+        .grid-col-2
+            .grid-block
+                - var currentDate = new Date();
+                - var year = currentDate.getFullYear();
+                - year = year == theme.startyear ? year : theme.startyear + ' - ' + year;
+                p © #{year} #[a(href=config.url)!= config.author]

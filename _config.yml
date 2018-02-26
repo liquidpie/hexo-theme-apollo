@@ -9,6 +9,9 @@ menu:
 favicon: /favicon.png
 logo: /logo.png
 thumbnail: /thumbnail.jpg
+icon_facebook: /icon-facebook.png
+icon_linkedin: /icon-linkedin.png
+icon_twitter: /icon-twitter.png
 
 # Comment
 # e.g disqus: seansun

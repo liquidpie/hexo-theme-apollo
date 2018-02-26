@@ -236,10 +236,10 @@ body {
 body {
     margin: 0;
     color: #34495e;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.6;
     background-color: #fff;
-    font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif
+    font-family: 'Open Sans', 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif
 }
 
 ul.nav,
@@ -311,19 +311,6 @@ header {
     min-height: 60px;
 }
 
-/*header .logo-link {*/
-    /*float: left*/
-/*}*/
-
-/*header .nav {
-    float: right;
-    left: 80px
-}*/
-
-/*header .logo-link img {*/
-    /*height: 60px*/
-/*}*/
-
 header .nav-list-item {
     display: inline-block;
     padding: 19px 10px;
@@ -332,8 +319,12 @@ header .nav-list-item {
 }
 
 header .nav-list-item a {
-    font-size: 16px;
-    line-height: 1.4
+    font-size: 12px;
+    line-height: 1em;
+    font-family: "Muli","Open Sans";
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .home.post-list {
@@ -404,7 +395,7 @@ header .nav-list-item a {
 .post-block .post-title {
     margin: 0.65em 0;
     color: #2c3e50;
-    font-size: 1.5em
+    font-size: 26px
 }
 
 .post-block .post-info {
@@ -803,9 +794,9 @@ main.container {
     margin: 2em 10px
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 968px) {
     .wrap {
-        width: 700px;
+        width: 968px;
         margin: 0 auto
     }
     header {
@@ -815,7 +806,7 @@ main.container {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 968px) {
     .wrap {
         width: 100%
     }
@@ -855,9 +846,10 @@ main.container {
 
 footer {
     padding-bottom: 1px;
-    position:fixed;
+    position: relative;
     bottom:0;
-    width:100%
+    width:100%;
+    margin: 0 auto;
 }
 
 footer .copyright {
@@ -928,14 +920,81 @@ footer .copyright a:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    /*position: absolute;*/
+    margin: auto;
     border: 0;
+    max-width: 142px;
+}
+
+.grid {
+    padding-top: 25px;
+}
+
+.grid, .grid-row {
+    width: 100%;
+}
+
+.grid-row {
+    margin-left: -17px;
+    margin-right: -17px;
 }
 
 .grid-col-3 {
-    max-width: 142px;
     float: left;
-    display: block;
     width: 25%;
-    overflow: hidden;
+    padding: 0;
+}
+
+.grid-col-9 {
+    width: 70%;
+    float: left;
+    padding: 0;
+    margin-left: 5%;
+}
+
+.grid-col-9 .grid-block p:first-of-type{
+    margin-top: 0;
+}
+
+div .grid-block a {
+    color: #42b983;
+}
+
+.img-wrapper {
+    text-align: center;
+}
+
+.grid-col-1 {
+    float: left;
+    width: 40%;
+    padding: 0;
+}
+
+.grid-col-2 {
+    width: 55%;
+    float: right;
+    padding: 0;
+    margin-left: 5%;
+}
+
+.grid-col-2 .grid-block {
+    float: right;
+}
+
+#social {
+    list-style-type: none;
+    display: inline;
+}
+
+#social li {
+    float: left;
+}
+
+.social-icon:hover {
+    background-color: #42b983;
+}
+
+.social-icon {
+    width: 48px;
+    height: auto;
+    display: inline;
 }
