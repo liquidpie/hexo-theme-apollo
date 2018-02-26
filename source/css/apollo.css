@@ -311,9 +311,9 @@ header {
     min-height: 60px
 }
 
-header .logo-link {
-    float: left
-}
+/*header .logo-link {*/
+    /*float: left*/
+/*}*/
 
 header .nav {
     float: right;
@@ -903,4 +903,14 @@ footer .copyright a:hover {
     width: 100%;
     display: table-cell;
     vertical-align: middle
+}
+
+.site-title .logo {
+    max-height: 75px;
+    max-width: 100%;
+    display: inline-block;
+    -webkit-transition: max-height .14s ease;
+    -moz-transition: max-height .14s ease;
+    -o-transition: max-height .14s ease;
+    transition: max-height .14s ease
 }

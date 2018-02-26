@@ -1,6 +1,7 @@
 .site-title-wrapper
-    .logo-wrapper
-        a.logo-link(href=url_for())
-            img(src=url_for(theme.logo) alt=theme.author)
-    .logo-image-title
-        a.logo-link(href=url_for()) theme.author
+    h1.site-title
+        .logo-wrapper
+            a.home-link(href=url_for())
+                img.logo(src=url_for(theme.logo) alt=theme.author)
+        .logo-image-title
+            a.home-link(href=url_for()) =theme.author
