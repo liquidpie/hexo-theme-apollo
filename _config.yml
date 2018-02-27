@@ -1,9 +1,10 @@
 menu:
     About: /
     Lab: /lab/
-    Resume: /resume/
+    Skills: /skills/
     Blog: /blog/
     Archive: /archives/
+    Contact: /contact/
     Rss: /atom.xml
 
 favicon: /favicon.png
@@ -20,7 +21,7 @@ duoshuo:
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+# ga: UA-65933410-1
 
 # Copyright Information
 startyear: 2018

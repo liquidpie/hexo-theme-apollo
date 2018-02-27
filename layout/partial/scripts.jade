@@ -8,3 +8,118 @@ if ga
         | (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',
         != '"' + ga + '"'
         | ,'auto');ga('send','pageview');
+
+// - Google Maps
+script.
+    function initLocation() {
+        var location = {lat: 12.908136, lng: 77.647608};
+        var style = [{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#34495e"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#42b983"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#626262"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#ffffff"},{"lightness":"0"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#f9f6f6"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"lightness":"0"},{"gamma":"1"},{"color":"#dddddd"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#000000"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#42b983"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#afa9a0"}]}];
+        var map = new google.maps.Map(document.getElementById('location'), {
+            zoom: 5,
+            center: location,
+            styles: style,
+            zoomControl: false,
+            mapTypeControl: false,
+            scaleControl: true,
+            streetViewControl: true,
+            rotateControl: true,
+            fullscreenControl: false
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+script(async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRG9syuItXlrvznh-y3RM3xNrcBHzlHQk&callback=initLocation")
+
+script(src="https://d3js.org/d3.v3.min.js")
+script(src=url_for('script/d3relationship.js'))
+
+script.
+    var json = [
+        { parent: 'Java', value: '11' },
+        { parent: 'Java', value: '21' },
+        { parent: 'Java', value: '31' },
+        { parent: 'Java', value: '41' },
+        { parent: 'Java', value: '51' },
+        { parent: 'Java', value: '61' },
+        { parent: 'Java', value: '71' },
+        { parent: 'Java', value: '81' },
+        { parent: 'Python', value: '11' },
+        { parent: 'Python', value: '21' },
+        { parent: 'Python', value: '31' },
+        { parent: 'Python', value: '41' },
+        { parent: 'Javascript', value: '11' },
+        { parent: 'Javascript', value: '21' },
+        { parent: 'Javascript', value: '31' },
+        { parent: 'Javascript', value: '41' },
+        { parent: 'Javascript', value: '51' },
+        { parent: 'NodeJS', value: '11' },
+        { parent: 'NodeJS', value: '21' },
+        { parent: 'NodeJS', value: '31' },
+        { parent: 'NodeJS', value: '41' },
+        { parent: 'NodeJS', value: '51' },
+        { parent: 'jQuery', value: '11' },
+        { parent: 'jQuery', value: '21' },
+        { parent: 'jQuery', value: '31' },
+        { parent: 'jQuery', value: '41' },
+        { parent: 'Spring Boot', value: '11' },
+        { parent: 'Spring Boot', value: '21' },
+        { parent: 'Spring Boot', value: '31' },
+        { parent: 'Spring Boot', value: '41' },
+        { parent: 'Spring Boot', value: '51' },
+        { parent: 'Spring Boot', value: '61' },
+        { parent: 'Apache Camel', value: '11' },
+        { parent: 'Apache Camel', value: '21' },
+        { parent: 'Apache Camel', value: '31' },
+        { parent: 'Apache Camel', value: '41' },
+        { parent: 'Apache Camel', value: '51' },
+        { parent: 'Apache Camel', value: '61' },
+        { parent: 'Apache Camel', value: '71' },
+        { parent: 'MongoDB', value: '11' },
+        { parent: 'MongoDB', value: '21' },
+        { parent: 'MongoDB', value: '31' },
+        { parent: 'MongoDB', value: '41' },
+        { parent: 'MongoDB', value: '51' },
+        { parent: 'MongoDB', value: '61' },
+        { parent: 'Redshift', value: '11' },
+        { parent: 'Redshift', value: '21' },
+        { parent: 'Redshift', value: '31' },
+        { parent: 'Redshift', value: '41' },
+        { parent: 'Redshift', value: '51' },
+        { parent: 'Redshift', value: '61' },
+        { parent: 'PostgreSQL', value: '11' },
+        { parent: 'PostgreSQL', value: '21' },
+        { parent: 'PostgreSQL', value: '31' },
+        { parent: 'PostgreSQL', value: '41' },
+        { parent: 'PostgreSQL', value: '51' },
+        { parent: 'PostgreSQL', value: '61' },
+        { parent: 'MySQL', value: '11' },
+        { parent: 'MySQL', value: '21' },
+        { parent: 'MySQL', value: '31' },
+        { parent: 'MySQL', value: '41' },
+        { parent: 'MySQL', value: '51' },
+        { parent: 'MySQL', value: '61' },
+        { parent: 'MySQL', value: '71' },
+        { parent: 'Redis', value: '11' },
+        { parent: 'Redis', value: '21' },
+        { parent: 'Redis', value: '31' },
+        { parent: 'Redis', value: '41' },
+        { parent: 'Redis', value: '51' },
+        { parent: 'Redis', value: '61' },
+        { parent: 'Jersey', value: '11' },
+        { parent: 'Jersey', value: '21' },
+        { parent: 'Jersey', value: '31' },
+        { parent: 'Jersey', value: '41' },
+        { parent: 'Jersey', value: '51' },
+        { parent: 'Jersey', value: '61' }
+    ];
+
+    var graph = d3.select('#skillgraph').relationshipGraph({
+        showTooltips: false,
+        maxChildCount: 10,
+        showKeys: false,
+        thresholds: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+        colors: ['#c4ffe4', '#a6edcc', '#92e8c0', '#8ae2b9', '#75d6a9', '#71d6a7', '#61c697', '#5fce9b', '#52c490', '#42b983']
+    }).data(json);

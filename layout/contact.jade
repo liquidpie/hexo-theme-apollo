@@ -1,0 +1,24 @@
+extends partial/layout
+
+block container
+    .grid
+        .grid-row
+            .grid-col-1
+                .grid-block
+                    h1 Say Hello
+                    p
+                        | If you need help with your project or If you'd like
+                        | to say
+                        i  'hello'
+                        | , feel free to get in touch.
+                    h3 vivekjaiswal {at} live {dot} in
+                    h3 #[a(target="_blank" href="https://gitter.im/liquidpie/Lobby") gitter.im/liquidpie/Lobby]
+                    p
+                        | Find me elsewhere
+                    ul#social
+                        li: a(target="_blank" href="https://www.facebook.com/vivek223") #[img.social-icon(src=url_for(theme.icon_facebook) alt="facebook")]
+                        li: a(target="_blank" href="https://www.linkedin.com/in/vivek223") #[img.social-icon(src=url_for(theme.icon_linkedin) alt="linkedin")]
+                        li: a(target="_blank" href="https://twitter.com/vivekjaiswal22") #[img.social-icon(src=url_for(theme.icon_twitter) alt="twitter")]
+            .grid-col-2
+                .grid-block
+                    #location
