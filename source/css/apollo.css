@@ -987,21 +987,44 @@ div .grid-block a {
 
 #social {
     list-style-type: none;
-    display: inline;
+    margin: 0;
 }
 
 #social li {
-    float: left;
-}
-
-.social-icon:hover {
-    background-color: #42b983;
+    display: inline-block;
 }
 
 .social-icon {
     width: 48px;
-    height: auto;
-    display: inline;
+    height: 48px;
+    display: block;
+}
+
+.facebook {
+    background-image: url("../icons/icon-facebook.png");
+    background-size: cover;
+}
+
+.facebook:hover {
+    background-image: url("../icons/icon-facebook-hover.png");
+}
+
+.linkedin {
+    background-image: url("../icons/icon-linkedin.png");
+    background-size: cover;
+}
+
+.linkedin:hover {
+    background-image: url("../icons/icon-linkedin-hover.png");
+}
+
+.twitter {
+    background-image:  url("../icons/icon-twitter.png");
+    background-size: cover;
+}
+
+.twitter:hover {
+    background-image: url("../icons/icon-twitter-hover.png");
 }
 
 #location {

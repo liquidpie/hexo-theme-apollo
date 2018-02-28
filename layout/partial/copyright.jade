@@ -3,9 +3,9 @@
         .grid-col-1
             .grid-block
                 ul#social
-                    li: a(target="_blank" href="https://www.facebook.com/vivek223") #[img.social-icon(src=url_for(theme.icon_facebook) alt="facebook")]
-                    li: a(target="_blank" href="https://www.linkedin.com/in/vivek223") #[img.social-icon(src=url_for(theme.icon_linkedin) alt="linkedin")]
-                    li: a(target="_blank" href="https://twitter.com/vivekjaiswal22") #[img.social-icon(src=url_for(theme.icon_twitter) alt="twitter")]
+                    li: a.social-icon.facebook(target="_blank" href="https://www.facebook.com/vivek223")
+                    li: a.social-icon.linkedin(target="_blank" href="https://www.linkedin.com/in/vivek223")
+                    li: a.social-icon.twitter(target="_blank" href="https://twitter.com/vivekjaiswal22")
         .grid-col-2
             .grid-block
                 - var currentDate = new Date();
