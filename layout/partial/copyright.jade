@@ -3,12 +3,12 @@
         .grid-col-1
             .grid-block
                 ul#social
-                    li: a.social-icon.facebook(target="_blank" href="https://www.facebook.com/vivek223")
-                    li: a.social-icon.linkedin(target="_blank" href="https://www.linkedin.com/in/vivek223")
-                    li: a.social-icon.twitter(target="_blank" href="https://twitter.com/vivekjaiswal22")
+                    li: a.social-icon.facebook(target="_blank" href="#{theme.facebook_url}")
+                    li: a.social-icon.linkedin(target="_blank" href="#{theme.linkedin_url}")
+                    li: a.social-icon.twitter(target="_blank" href="#{theme.twitter_url}")
         .grid-col-2
             .grid-block
                 - var currentDate = new Date();
                 - var year = currentDate.getFullYear();
                 - year = year == theme.startyear ? year : theme.startyear + ' - ' + year;
-                p © #{year} #[a(href=config.url)!= config.author]
+                p © #{year} #[a(target="_blank" href=theme.aboutme_url)!= config.author]

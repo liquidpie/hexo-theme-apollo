@@ -10,9 +10,24 @@ menu:
 favicon: /favicon.png
 logo: /logo.png
 thumbnail: /thumbnail.jpg
-icon_facebook: /icon-facebook.png
-icon_linkedin: /icon-linkedin.png
-icon_twitter: /icon-twitter.png
+
+# urls
+facebook_url: https://www.facebook.com/vivek223
+linkedin_url: https://www.linkedin.com/in/vivek223
+twitter_url: https://twitter.com/vivekjaiswal22
+github_url: https://github.com/liquidpie
+aboutme_url: https://about.me/vjaiswal
+
+# projects
+projects:
+    musingly:
+        name: Musingly
+        image: /icons/project-musingly.png
+        url: https://musingly.herokuapp.com
+    fdg:
+        name: Force Graph
+        image: /icons/project-fdg.png
+        url: https://force-graph.herokuapp.com
 
 # Comment
 # e.g disqus: seansun

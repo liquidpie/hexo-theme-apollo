@@ -2,7 +2,22 @@ extends partial/layout
 
 block container
     #projects
-        h1 Below are my projects
-
+        .cardstack
+            .card
+                img(src=url_for(theme.projects.musingly.image))
+                .carddetail
+                    h4 #[a(target="_blank" href="#{theme.projects.musingly.url}") #{theme.projects.musingly.name}]
+                    p Random quote streams to make your day
+            .card
+                img(src=url_for(theme.projects.fdg.image))
+                .carddetail
+                    h4 #[a(target="_blank" href="#{theme.projects.fdg.url}") #{theme.projects.fdg.name}]
+                    p
+                        | Co-occurrence force directed graph of characters in classic
+                        strong
+                            i &nbsp;Les Miserables
+        p
+            i Checkout my other repositories
+        h3 #[a(target="_blank" href="#{theme.github_url}") github.com/liquidpie]
 block copyright
     include partial/copyright

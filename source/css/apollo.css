@@ -801,7 +801,6 @@ main.container {
         margin: 0 auto
     }
     header {
-        /*padding: 2px 0px;*/
         padding: 20px 0 0;
         text-align: center;
     }
@@ -1041,6 +1040,10 @@ svg {
     margin: auto;
 }
 
+#projects a {
+    color: #42b983;
+}
+
 /* Relationship graph */
 .relationshipGraph-block {
     stroke: #F7F7F7;
@@ -1054,4 +1057,35 @@ svg {
     height: auto;
     left: -100%;
     top: -100%
+}
+
+/* Cards */
+.cardstack {
+    display: inline-block;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 25%;
+    height: 380px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.carddetail {
+    padding: 0px 16px;
+    text-align: left;
 }
