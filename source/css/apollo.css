@@ -1038,6 +1038,7 @@ div .grid-block a {
 
 svg {
     margin: auto;
+    height: auto;
 }
 
 #projects a {
