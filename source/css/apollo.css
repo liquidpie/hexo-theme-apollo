@@ -1098,8 +1098,7 @@ svg {
 @media screen and (max-device-width: 800px) {
     .grid-col-1,
     .grid-col-2 {
-        width: 50%;
-        margin: 0 auto;
+        width: 100%;
         float: none;
         padding: 0;
     }
@@ -1116,11 +1115,11 @@ svg {
     .grid-col-2 .grid-block p:first-of-type{
         float: none;
     }
-    #social {
-        padding: 0;
-    }
     .card {
         width: 90%;
         height: auto;
+    }
+    svg {
+        width: 100%;
     }
 }
