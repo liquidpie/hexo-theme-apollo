@@ -1107,6 +1107,7 @@ svg {
     .grid-col-9 {
         float: none;
         width: 100%;
+        margin-left: 5%;
     }
     .grid-block {
         text-align: center;
