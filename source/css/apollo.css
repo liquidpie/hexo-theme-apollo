@@ -914,6 +914,10 @@ footer .copyright a:hover {
     transition: max-height .14s ease
 }
 
+.logo {
+    image-rendering: -webkit-optimize-contrast;
+}
+
 .thumbnail {
     border-radius: 50%;
     left: 0;
@@ -1089,4 +1093,33 @@ svg {
 .carddetail {
     padding: 0px 16px;
     text-align: left;
+}
+
+@media screen and (max-device-width: 800px) {
+    .grid-col-1,
+    .grid-col-2 {
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+        padding: 0;
+    }
+    .grid-col-3,
+    .grid-col-9 {
+        float: none;
+        width: 100%;
+    }
+    .grid-block {
+        text-align: center;
+        float: none;
+    }
+    .grid-col-2 .grid-block p:first-of-type{
+        float: none;
+    }
+    #social {
+        padding: 0;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+    }
 }
